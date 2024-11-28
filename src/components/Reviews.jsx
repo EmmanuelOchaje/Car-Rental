@@ -4,7 +4,7 @@ import wps from "../assets/images/wps.png";
 
 const Reviews = (props) => {
   return (
-    <div className="b-[#F7FBFF] min-h-[100vh]">
+    <div className="b-[#F7FBFF] lg:min-h-[100vh]">
       {/* <div className="py-6">
         <div className="flex relative justify-center">
           <img src={qleft} className="w-[270px] h-[300px]" alt="" />

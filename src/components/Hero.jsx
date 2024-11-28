@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const Hero = ({ containerVariants }) => {
   return (
     <div>
-      <div className="flex justify-between pl-20">
+      <div className="flex justify-between lg:pl-20 pl-6">
         {/* header text */}
         <div className="w-[35%] h-fit flex items-cente">
           <motion.div
@@ -23,14 +23,14 @@ const Hero = ({ containerVariants }) => {
             }}
             className="py-20"
           >
-            <h2 className="text-4xl overflow-hidden text-[#242424] font-bold">
+            <h2 className="text-2xl md:text-4xl overflow-hidden text-[#242424] font-bold">
               Find, book and rent a <br /> car{" "}
               <span className="text-[#1572D3] flex-col">
                 Easily
                 {/* <img src={line} className="w-[100px]  h-[20px]" alt="/" /> */}
               </span>
             </h2>
-            <p className="text-[#272727] my-4">
+            <p className="text-[#272727] text-[14px] my-4">
               Get a car wherever and whenever you need it with <br /> your IOS
               and Android device.
             </p>
@@ -74,10 +74,10 @@ const Hero = ({ containerVariants }) => {
           damping: 10,
           delay: 1.5,
         }} */
-        className="shadow-xl flex justify-between w-[80%] p-2 rounded-lg mx-auto my-8 bg-white pl-6"
+        className="shadow-xl flex justify-between md:w-[80%] w-[95%] p-2 rounded-lg mx-auto my-8 bg-white md:pl-6"
       >
         <div className="flex border-r-2 mr-4 w-[30%]">
-          <img src={location} className="w-[30px] h-[30px]" alt="" />
+          <img src={location} className="w-[30px] my-auto h-[30px]" alt="" />
           <div className="px-2">
             <h3 className="font-normal text-[13px]">Location</h3>
             <p className="text-[12px] text-[#bdbdbd]">Search your location</p>
@@ -85,7 +85,7 @@ const Hero = ({ containerVariants }) => {
         </div>
 
         <div className="flex border-r-2 w-[30%] mr-4">
-          <img src={calendar} className="w-[30px] h-[30px]" alt="" />
+          <img src={calendar} className="w-[30px] my-auto h-[30px]" alt="" />
           <div className="px-2">
             <h3 className="font-normal text-[13px]">Pick up date</h3>
             <p className="text-[12px] text-[#bdbdbd]">Tue 15 Feb, 09:00</p>
@@ -93,7 +93,7 @@ const Hero = ({ containerVariants }) => {
         </div>
 
         <div className="flex border- w-[30%]">
-          <img src={calendar} className="w-[30px] h-[30px]" alt="" />
+          <img src={calendar} className="w-[30px] my-auto h-[30px]" alt="" />
           <div className="px-2">
             <h3 className="font-normal text-[13px]">Return Date</h3>
             <p className="text-[12px] text-[#bdbdbd]">Thu 16 Feb, 11:00</p>

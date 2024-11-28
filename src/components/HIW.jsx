@@ -32,7 +32,7 @@ const data = [
 const HIW = ({ containerVariants, cardVariants }) => {
   return (
     <div>
-      <div className="h-[100vh] pt-20">
+      <div className="lg:h-[100vh] my-10 lg:my-0 pt-20">
         {/* Header */}
         <motion.header
           variants={containerVariants}
@@ -43,7 +43,7 @@ const HIW = ({ containerVariants, cardVariants }) => {
           <h2 className="w-fit p-2 px-6 rounded-lg bg-[#ECF5FF] font-medium text-[#1572D3] m-auto">
             HOW IT WORKS
           </h2>
-          <h2 className="text-[#333333] font-medium text-3xl text-center my-4">
+          <h2 className="text-[#333333] font-medium text-[22px] md:text-3xl text-center my-4">
             Rent with following 3 working steps
           </h2>
         </motion.header>
@@ -54,7 +54,7 @@ const HIW = ({ containerVariants, cardVariants }) => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.8 }}
-          className="flex w-fit mx-auto"
+          className="md:flex flex-wrap w-fit mx-auto"
         >
           {data.map((item, index) => (
             <motion.div key={index} variants={cardVariants} className="m-10">

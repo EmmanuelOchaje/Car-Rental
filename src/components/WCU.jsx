@@ -30,8 +30,8 @@ const data = [
 
 const WCU = ({ containerVariants, cardVariants }) => {
   return (
-    <div className="bg-1 min-h-[100vh] overflow-hidden flex justify-between">
-      <div className="flex items-center h-[100vh]">
+    <div className="lg:bg-1 lg:min-h-[100vh] overflow-hidden lg:flex justify-between">
+      <div className="flex items-center lg:h-[100vh]">
         <motion.img
           initial={{ opacity: 0, scale: 0.8, y: 50 }}
           whileInView={{ opacity: 1, scale: 1, y: [0, -10, 5, 0] }} // Keyframes for bounce
@@ -41,7 +41,7 @@ const WCU = ({ containerVariants, cardVariants }) => {
           }}
           viewport={{ once: true, amount: 0.3 }}
           src={audi}
-          className="w-[600px]"
+          className="md:w-[600px]"
           alt=""
         />
       </div>
@@ -59,11 +59,12 @@ const WCU = ({ containerVariants, cardVariants }) => {
             delay: 0.3,
           }}
           viewport={{ once: true, amount: 0.3 }}
+          className="px-6 lg:px-0"
         >
           <h2 className="text-[#1572D3] bg-[#ECF5FF] w-fit px-6 rounded-lg p-2 font-medium">
             WHY CHOOSE US
           </h2>
-          <h2 className="text-3xl font-medium w-[500px] my-4">
+          <h2 className="text-[22px] md:text-3xl font-medium md:w-[500px] my-4">
             We offer the best car experience with our rental deals
           </h2>
         </motion.div>
@@ -77,7 +78,7 @@ const WCU = ({ containerVariants, cardVariants }) => {
           viewport={{ once: true, amount: 0.8 }}
         >
           {data.map((data, key) => (
-            <motion.div className="flex my-2" variants={cardVariants}>
+            <motion.div key={key} className="flex my-2" variants={cardVariants}>
               {" "}
               <img
                 src={data.img}
@@ -85,8 +86,8 @@ const WCU = ({ containerVariants, cardVariants }) => {
                 alt="/"
               />{" "}
               <div>
-                <h3 className="text-xl">{data.head}</h3>
-                <p className="text-gray-500 text-[14px] w-[500px] my-2">
+                <h3 className="text-[17px] md:text-xl">{data.head}</h3>
+                <p className="text-gray-500 text-[12px] md:text-[14px] w-[500px] my-2">
                   {data.text}
                 </p>
               </div>

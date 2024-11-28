@@ -34,7 +34,7 @@ const containerVariants = {
 function App() {
   return (
     <div className="App">
-      <div className="bg min-h-[100vh]">
+      <div className="bg lg:min-h-[100vh]">
         <Navbar />
         <Hero containerVariants={containerVariants} />
       </div>

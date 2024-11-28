@@ -60,7 +60,7 @@ const data = [
 ];
 const Pop = ({ containerVariants, cardVariants }) => {
   return (
-    <div className="my-6 min-h-[100vh]">
+    <div className="my-6 lg:min-h-[100vh]">
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -81,7 +81,7 @@ const Pop = ({ containerVariants, cardVariants }) => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.8 }}
-          className="flex justify-center"
+          className="flex flex-wrap justify-center"
         >
           {data.map((data, key) => (
             <motion.div
