@@ -86,7 +86,6 @@ const Pop = ({ containerVariants, cardVariants }) => {
           {data.map((data, key) => (
             <motion.div
               className="m-4 shadow-xl rounded-xl p-4 pb-0"
-              key={key}
               variants={cardVariants}
             >
               <img

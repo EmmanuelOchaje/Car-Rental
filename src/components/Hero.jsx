@@ -9,9 +9,9 @@ import { motion } from "framer-motion";
 const Hero = ({ containerVariants }) => {
   return (
     <div>
-      <div className="flex justify-between lg:pl-20 pl-6">
+      <div className=" justify-between md:flex lg:pl-20 pl-6">
         {/* header text */}
-        <div className="w-[35%] h-fit flex items-cente">
+        <div className="md:w-[35%] h-fit flex justify-center">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
@@ -21,16 +21,16 @@ const Hero = ({ containerVariants }) => {
               damping: 10,
               delay: 0.9,
             }}
-            className="py-20"
+            className="lg:py-20"
           >
-            <h2 className="text-2xl md:text-4xl overflow-hidden text-[#242424] font-bold">
+            <h2 className="text-2xl md:text-4xl text-center md:text-left overflow-hidden text-[#242424] font-bold">
               Find, book and rent a <br /> car{" "}
               <span className="text-[#1572D3] flex-col">
                 Easily
                 {/* <img src={line} className="w-[100px]  h-[20px]" alt="/" /> */}
               </span>
             </h2>
-            <p className="text-[#272727] text-[14px] my-4">
+            <p className="text-[#272727] text-center md:text-left text-[14px] my-4">
               Get a car wherever and whenever you need it with <br /> your IOS
               and Android device.
             </p>
@@ -42,7 +42,7 @@ const Hero = ({ containerVariants }) => {
         </div>
 
         {/* car image */}
-        <div className="w-[70%] pt-10 z-10">
+        <div className="lg:w-[70%] pt-10 z-10">
           <motion.img
             src={car}
             initial={{ opacity: 0, x: 100 }}

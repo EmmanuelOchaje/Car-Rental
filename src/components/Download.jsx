@@ -5,7 +5,7 @@ import phone from "../assets/images/phone.png";
 const Download = (props) => {
   return (
     <div className="flex flex-wrap">
-      <div className="lg:min-h-[100vh] my-10 lg:my-0 bg-2 pt-[10rem] px-[8rem]">
+      <div className="lg:min-h-[100vh] my-10 lg:my-0 bg-2 pt-[10rem] px-[4rem] md:px-[8rem]">
         <h2 className="text-[#1572D3] mx-aut bg-[#ECF5FF] w-fit px-6 rounded-lg p-2 font-medium">
           DOWNLOAD
         </h2>
